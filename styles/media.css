@@ -42,7 +42,7 @@
   .image {
     margin-top: 2rem;
     height: auto;
-    width: 60%;
+    width: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -84,12 +84,18 @@
   .timeline .timeline-item {
     margin-top: 1rem;
   }
+  .progress {
+    display: block;
+  }
   .portfolios {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .portfolios .portfolio-item .image {
-    width: 80%;
+  .portfolios .portfolio-item .image img {
+    height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .contact-content-con {
     -webkit-box-orient: vertical;

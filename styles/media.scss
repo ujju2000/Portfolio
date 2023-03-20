@@ -33,13 +33,15 @@
     }
     .image {
        margin-top : 2rem;
-       height : auto;
-       width : 60%;
+        height : auto;
+        width : auto;
        display : flex;
        align-self: center;
+       
     }   
 
 
+    
     // about section 
     .main-title {
         h2{
@@ -79,15 +81,20 @@
             margin-top : 1rem;
         }
     }
-
+    .progress {
+        display: block;
+    }
     // portfolios 
     .portfolios {
         grid-template-columns: 1fr;
         .portfolio-item {
-            .image {
-                width : 80%;
 
-            }
+           .image img {
+                height : 300px;
+                width: 100%;
+               object-fit: cover;
+               
+           }
         }
     }
     .contact-content-con {
