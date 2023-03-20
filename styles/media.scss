@@ -1,6 +1,15 @@
-@media screen and (max-width : 700px){
+@media screen and (max-width : 950px){
+    .bg-text {
+        display : none;
+    }
     section {
-        padding : 2rem 10rem;
+        padding : 30px ;
+        .main-title {
+            h2 {
+                font-size : 2rem;
+                font-weight : 600;
+            }
+        }
     }
     .controls {
         position : fixed;
@@ -22,8 +31,12 @@
        display : flex;
        flex-direction: column;
         .left-header{
+            margin-left : 1rem;
             .h-shape {
                 display : none;
+            }
+            .image {
+                margin-left : .12rem;
             }
         }
         .right-header{
@@ -43,10 +56,18 @@
 
     
     // about section 
+    .about {
+        height : 100%;
+        width : 100%;
+    
     .main-title {
+        text-align: left;
         h2{
+
             font-size: 2rem;
-            top : 25%;
+            top : 0%;
+            left : 0%;
+
         }
         .bg-text{
             font-size: 4rem;
@@ -57,7 +78,7 @@
         grid-template-columns: 1fr;
         padding-top : 1rem;
         .left-about {
-            padding-right : 2rem;
+            padding-right : 1rem;
             p{
                 padding-left: 0;
             }
@@ -72,18 +93,24 @@
     .about-stats {
         .progress-bars {
             grid-template-columns: 1fr;
-        }
-       
+            .progress {
+                width : 100%;
+                span {
+                    background-color: white;
+                }
+            }
+        }   
     }
     .timeline{
         grid-template-columns: 1fr;
+        padding : 30px;
+        padding-top : 10px;
+        grid-gap: 1rem;
         .timeline-item {
             margin-top : 1rem;
         }
     }
-    .progress {
-        display: block;
-    }
+}
     // portfolios 
     .portfolios {
         grid-template-columns: 1fr;
@@ -98,15 +125,36 @@
         }
     }
     .contact-content-con {
+        padding-top : 1rem;
         flex-direction: column;
-
+        .left-contact {
+            .contact-item {
+                display : flex;
+                flex-direction: column;
+            }
+            .contact-icon {
+                justify-content: center;
+                align-items: center;
+            }
+        }
         .right-contact {
-            flex-direction: column;
-            input {
-                display : block;
+            margin-left : 0rem; 
+            form {
+                .input-control {
+                    text-align: center;
+                    margin : 1rem;
+                    margin-left : 30%;
+                    input {
+                        
+                        display : block;
+                        margin-top: 20px;
+                    }
+                    textarea {
+                        margin : 0px;
+                    }
+                } 
             }
         }
     }
-
 
 }
